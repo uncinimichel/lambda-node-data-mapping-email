@@ -41,7 +41,7 @@ exports.handler = (event, context, callback) => {
 
           const emailParams = {
                 Destination: {
-                    ToAddresses: ["uncini.michel@gmail.com"]
+                    ToAddresses: ["uncini.michel@gmail.com", "yace.za@gmail.com", "williams.mathew91@gmail.com", "me@danknight.name"]
                 },
                 Message: {
                     Body: {
@@ -68,18 +68,18 @@ exports.handler = (event, context, callback) => {
 };
 
 //Test:
-const p  = require("./index.js")
-const event = {
-  Records : [{
-    s3:{
-      bucket:{
-        name: "com.surfing.website"
-      },
-      object: {
-        key: "index.html"
-      }
-    }
-  }]
-}
-
-p.handler(event, null, (err) => console.log(err))
+// const p  = require("./index.js")
+// const event = {
+//   Records : [{
+//     s3:{
+//       bucket:{
+//         name: "com.surfing.website"
+//       },
+//       object: {
+//         key: "index.html"
+//       }
+//     }
+//   }]
+// }
+//
+// p.handler(event, null, (err) => console.log(err))
