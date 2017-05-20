@@ -50,7 +50,7 @@ exports.handler = (event, context, callback) => {
                         }
                     },
                     Subject: {
-                        Data: "Surfing email!!!!!"
+                        Data: "Dailiy mails for Surfer"
                     }
                 },
                 Source: "uncini.michel@gmail.com"
